@@ -15,31 +15,31 @@ namespace MyPortfolio.Controllers
         {
             new Portfolio
             {
-                Name="اولین نمونه کار من",Discription="ایجاد قالب 404 به عنوان اولین نمونه کار من ",Image="portfolio-1.jpg"
+                Name="اولین نمونه کار من", Discription="ایجاد قالب 404 به عنوان اولین نمونه کار من ", Image="portfolio-1.jpg"
             },
              new Portfolio
             {
-                Name="اپلیکیشن نیرو کارت",Discription="اپلیکشن وزارت نیرو که شامل خدمات بانکی همراه با باشگاه مشتریان می باشد",Image="portfolio-2.jpg"
+                Name="اپلیکیشن نیرو کارت", Discription="اپلیکشن وزارت نیرو که شامل خدمات بانکی همراه با باشگاه مشتریان می باشد", Image="portfolio-2.jpg"
             },
               new Portfolio
             {
-                Name="اپلیکیشن پارسی کارت",Discription="اپلیکشن سایر ارگان ها که شامل خدمات بانکی همراه با باشگاه مشتریان می باشد",Image="portfolio-3.jpg"
+                Name="اپلیکیشن پارسی کارت", Discription="اپلیکشن سایر ارگان ها که شامل خدمات بانکی همراه با باشگاه مشتریان می باشد", Image="portfolio-3.jpg"
             },
                new Portfolio
             {
-                Name="پروژه دانشکده مهندسی",Discription="پروژه وب سایت فروشگاهی   ",Image="portfolio-4.jpg"
+                Name="پروژه دانشکده مهندسی", Discription="پروژه وب سایت فروشگاهی   ", Image="portfolio-4.jpg"
             },
                 new Portfolio
             {
-                Name="پروژه وب سایت مخابرات",Discription="پنل گزارش گری و ثبت گزارشات کارشناسان اینترنت مخابرات ",Image="portfolio-5.jpg"
+                Name="پروژه وب سایت مخابرات", Discription="پنل گزارش گری و ثبت گزارشات کارشناسان اینترنت مخابرات ", Image="portfolio-5.jpg"
             },
                  new Portfolio
             {
-                Name="وب سایت شادلین",Discription="وب سایت گردشگری و تفریحی کیش ",Image="portfolio-6.jpg"
+                Name="وب سایت شادلین", Discription="وب سایت گردشگری و تفریحی کیش ", Image="portfolio-6.jpg"
             },
                   new Portfolio
             {
-                Name=" اپلیکیشن املاک",Discription="اپلیکیشن درج ملک جهت رهن ،اجاره ، خرید و فروش ",Image="portfolio-7.jpg"
+                Name=" اپلیکیشن املاک", Discription="اپلیکیشن درج ملک جهت رهن ،اجاره ، خرید و فروش ", Image="portfolio-7.jpg"
             }
 
         };
