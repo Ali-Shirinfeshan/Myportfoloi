@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Portfolio>
+@{
+    ViewData["Title"] = "نمونه کارها";
+}
+
+<section id="portfolio" class="portfolio" dir="rtl">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>نمونه کار</h2>
+            <p>نمونه کار های من </p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">همه</li>
+                    <li data-filter=".filter-app">اپلیکیشن</li>
+                    <li data-filter=".filter-card">گرافیک</li>
+                    <li data-filter=".filter-web">طراحی سایت</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row portfolio-container">
+            @foreach (var portfolio in Model)
+            {
+                <div class="col-lg-4 col-md-6 portfolio-item @portfolio.Type">
+                    <div class="portfolio-wrap">
+                        <img src="~/img/portfolio/@portfolio.Image" class="img-fluid" alt="@portfolio.Name" title="@portfolio.Discription">
+                        <div class="portfolio-info">
+                            <h4>@portfolio.Name</h4>
+                            <p>@portfolio.Discription</p>
+                            <div class="portfolio-links">
+                                <a href="~/img/portfolio/@portfolio.Image" data-gallery="portfolioGallery" class="portfolio-lightbox" title="@portfolio.Discription"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+</section>
+

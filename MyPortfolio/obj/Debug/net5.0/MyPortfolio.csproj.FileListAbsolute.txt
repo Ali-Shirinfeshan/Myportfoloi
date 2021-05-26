@@ -315,7 +315,6 @@ H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\bin\Debug\net5.0\zh-Hans\Mic
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\MyPortfolio.csprojAssemblyReference.cache
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\MyPortfolio.GeneratedMSBuildEditorConfig.editorconfig
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\MyPortfolio.AssemblyInfoInputs.cache
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\MyPortfolio.AssemblyInfo.cs
@@ -345,3 +344,6 @@ H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\MyPortfolio
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\MyPortfolio.genruntimeconfig.cache
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\Razor\Views\Home\Components\Resum\_resum.cshtml.g.cs
+H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\MyPortfolio.csproj.AssemblyReference.cache
+H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\Razor\Views\Home\Services.cshtml.g.cs
+H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\Razor\Views\Home\Components\Portfolio\_Portfolio.cshtml.g.cs
