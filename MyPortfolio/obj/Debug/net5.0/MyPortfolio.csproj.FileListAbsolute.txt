@@ -344,3 +344,4 @@ H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\ref\MyPortf
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\MyPortfolio.pdb
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\MyPortfolio.genruntimeconfig.cache
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\Razor\Views\Home\Components\Resum\_resum.cshtml.g.cs

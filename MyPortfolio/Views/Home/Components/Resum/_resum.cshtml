@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Resum>
+@{
+    ViewData["Title"] = "رزومه";
+}
+
+<section id="resume" class="resume" dir="rtl">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>روزومه</h2>
+            <p>در اینجا میتوانید رزومه من را چک کنید</p>
+        </div>
+
+        <div class="row">
+            @foreach (var project in Model)
+            {
+                <div class="col-lg-6">
+                    <h3 class="resume-title">@project.Title</h3>
+                    <div class="resume-item pb-0">
+                        <h4>@project.Subtitle</h4>
+                        <h5>@project.Date</h5>
+                        <p><em>@project.Date</em></p>
+                        <p>
+                            @project.Discription
+                        </p>
+                    </div>
+
+
+                </div>
+              
+
+            }
+
+        </div>
+
+    </div>
+</section>
+
