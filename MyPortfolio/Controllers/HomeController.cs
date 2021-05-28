@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using MyPortfolio.Models;
 using System.Diagnostics;
+using System.Net.Mime;
 
 namespace MyPortfolio.Controllers
 {
@@ -18,6 +19,17 @@ namespace MyPortfolio.Controllers
         {
             return View();
         }
+
+        /*دانلود یک فایل در MVC*/
+        public IActionResult downloadfile()
+        {
+            var filebyte = System.IO.File.ReadAllBytes("wwwroot/css/style.css");
+            const string filename="StyleFile";
+            return File(filebyte,MediaTypeNames.Text.Plain,filename);
+
+        }
+        /*******************************/
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
