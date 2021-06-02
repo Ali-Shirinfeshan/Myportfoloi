@@ -19,7 +19,7 @@ namespace MyPortfolio.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            var contact=new Contactinfo() { Address="شیراز-خیابان معدل",MyEmail="Sh201220@gmail.com",Mobile="09374181503"};
+            var contact=new Contact() { Address="شیراز-خیابان معدل",MyEmail="Sh201220@gmail.com",Mobile="09374181503"};
             return View(contact);
         }
         //use IFormCollection to Binding Data
