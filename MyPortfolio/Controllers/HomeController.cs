@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyPortfolio.Models;
 using System.Diagnostics;
@@ -15,11 +16,29 @@ namespace MyPortfolio.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            var contact=new Contactinfo() { Address="شیراز-خیابان معدل",MyEmail="Sh201220@gmail.com",Mobile="09374181503"};
+            return View(contact);
         }
+        //use IFormCollection to Binding Data
 
+        //[HttpPost]
+        //public JsonResult Index(IFormCollection form)
+        //{
+        //    var name=form["name"];
+        //    return Json(Ok());
+        //}
+
+        //use Model to Binding Data
+
+        [HttpPost]
+        public JsonResult Index(Contact form)
+        {
+            var _name=form.Name;
+            return Json(Ok());
+        }
         /*دانلود یک فایل در MVC*/
         public IActionResult downloadfile()
         {

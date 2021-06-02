@@ -8,16 +8,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
-@font-face {
-    font-family: 'Iran-sans';
-    src: url('../Fonts/IRANSansWeb.woff2') format('woff2'),
-    url('../Fonts/iran_sans_regular.ttf')  format('truetype');
-}
-
-
 body {
-  font-family: "Iran-sans", sans-serif;
+  direction: rtl;
+  font-family: "Open Sans", sans-serif;
   background-color: #040404;
   color: #fff;
   position: relative;
@@ -53,7 +46,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Iran-sans", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -75,11 +68,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #header h1 {
   font-size: 48px;
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  font-family: "Iran-sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #header h1 a, #header h1 a:hover {
@@ -200,6 +193,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  margin-left: 200px;
 }
 
 .navbar li {
@@ -207,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar li + li {
-  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .navbar a {
@@ -215,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  font-family: "Iran-sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
@@ -364,7 +358,7 @@ section .container {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Iran-sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .section-title h2::after {
@@ -382,7 +376,7 @@ section .container {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Iran-sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
@@ -459,7 +453,7 @@ section .container {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Iran-sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
 
@@ -479,7 +473,7 @@ section .container {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Iran-sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
@@ -627,7 +621,7 @@ section .container {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Iran-sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #18d26e;
   margin-bottom: 10px;
 }
