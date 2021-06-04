@@ -39,8 +39,8 @@
     </div>
 </header>
 <!-- ======= About Section ======= -->
-@*<partial name="About"/>*@ 
-@await Html.PartialAsync("About") 
+@*<partial name="About"/>*@
+@await Html.PartialAsync("About")
 <!-- End About Section -->
 <!-- ======= Resume Section ======= -->
 @await Component.InvokeAsync("Resum")
@@ -49,7 +49,7 @@
 <partial name="Services" />
 <!-- End Services Section -->
 <!-- ======= Portfolio Section ======= -->
- @await Component.InvokeAsync("Portfolio")
+@await Component.InvokeAsync("Portfolio")
 <!-- End Portfolio Section -->
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact">
@@ -66,7 +66,7 @@
                 <div class="info-box">
                     <i class="bx bx-map"></i>
                     <h3>نشانی</h3>
-                    <p>@Model.Address</p>
+                    @*<p>@Model.Address</p>*@
                 </div>
             </div>
 
@@ -90,7 +90,7 @@
                 <div class="info-box">
                     <i class="bx bx-envelope"></i>
                     <h3>پست الکترونیکی</h3>
-                    <p>@Model.MyEmail</p>
+                    @*<p>@Model.MyEmail</p>*@
 
                 </div>
             </div>
@@ -98,38 +98,53 @@
                 <div class="info-box">
                     <i class="bx bx-phone-call"></i>
                     <h3>شماره تماس</h3>
-                    <p>@Model.Mobile</p>
+                    @*<p>@Model.Mobile</p>*@
                 </div>
             </div>
         </div>
 
-        <form asp-action="Index" method="post" role="form" class="php-email-form mt-4">
-            
+        <form method="post" role="form" class="php-email-form mt-4" asp-action="Index">
+            @if (!string.IsNullOrWhiteSpace(ViewBag.error))
+            {
+                <div class="alert-danger text-center">
+                    <p> @ViewBag.error</p>
+                </div>
+
+            }
+            @if (!string.IsNullOrWhiteSpace(ViewBag.success))
+            {
+                <div class="alert-success text-center">
+                    <p> @ViewBag.success</p>
+                </div>
+
+            }
             <div class="row">
                 <div class="col-md-6 form-group">
-                    <input type="text" class="form-control"  placeholder="Your Name" asp-for="Name" >
+                    <input type="text" class="form-control" placeholder="Your Name" asp-for="Name">
                     <span class="text-danger" asp-validation-for="Name"></span>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control"  placeholder="Your Email" asp-for="Email">
+                    <input type="email" class="form-control" placeholder="Your Email" asp-for="Email">
                     <span class="text-danger" asp-validation-for="Email"></span>
                 </div>
             </div>
             <div class="form-group mt-3">
-                <input type="text" class="form-control"  placeholder="Subject" asp-for="Subject">
+                <select class="form-control" asp-for="Service" asp-items="Model.Services">
+                    <option value="0" selected class="form-control">یک گزینه را انتخاب کنید</option>
+                </select>
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" class="form-control" placeholder="Subject" asp-for="Subject">
                 <span class="text-danger" asp-validation-for="Subject"></span>
             </div>
             <div class="form-group mt-3">
-                <textarea class="form-control"  rows="5" placeholder="Message" asp-for="Message"></textarea>
+                <textarea class="form-control" rows="5" placeholder="Message" asp-for="Message"></textarea>
                 <span class="text-danger" asp-validation-for="Message"></span>
             </div>
-            <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+
+            <div class="text-center "><input type="submit" value="ارسال پیام" class="btn btn-success m-2" /></div>
         </form>
 
     </div>
 </section><!-- End Contact Section -->
+<

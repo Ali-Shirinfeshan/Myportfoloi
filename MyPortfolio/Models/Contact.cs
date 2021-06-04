@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MyPortfolio.Models
 {
@@ -20,11 +17,13 @@ namespace MyPortfolio.Models
         public string Subject { get; set; }
         [Required(ErrorMessage = "این فیلد الزامی می باشد")]
         public string Message { get; set; }
+        public string Service { get; set; }
+        public SelectList Services { get; set; }
 
         //اطلاعات نمایش در قالب بخش تماس با ما
-        public string Address { get; set; }
-        public string MyEmail { get; set; }
-        public string Mobile { get; set; }
+        /*  public string Address { get; set; }
+          public string MyEmail { get; set; }
+          public string Mobile { get; set; }*/
 
 
     }
