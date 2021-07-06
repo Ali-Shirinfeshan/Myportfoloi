@@ -347,3 +347,4 @@ H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\Razor\Views
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\MyPortfolio.csproj.AssemblyReference.cache
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\Razor\Views\Home\Services.cshtml.g.cs
 H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\Razor\Views\Home\Components\Portfolio\_Portfolio.cshtml.g.cs
+H:\Project\Tamrin\MyPortfolio in GitHub\MyPortfolio\obj\Debug\net5.0\Razor\Views\Home\portfolioDetail.cshtml.g.cs

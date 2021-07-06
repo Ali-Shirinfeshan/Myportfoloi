@@ -61,7 +61,12 @@ namespace MyPortfolio.Controllers
             ViewBag.success = "اطلاعات شما با موفقیت ثبت شد";
             return View(form);
         }
-
+        [Route("/portfolioDetail")]
+        public IActionResult portfolioDetail(long id)
+        {
+            var portfolio = PortfolioDetails.GetportfolioBy(id);
+            return View(portfolio);
+        }
 
         /*دانلود یک فایل در MVC*/
         public IActionResult downloadfile()

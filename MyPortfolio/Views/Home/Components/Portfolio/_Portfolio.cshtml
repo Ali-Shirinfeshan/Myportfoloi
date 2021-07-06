@@ -33,7 +33,7 @@
                             <p>@portfolio.Discription</p>
                             <div class="portfolio-links">
                                 <a href="~/img/portfolio/@portfolio.Image" data-gallery="portfolioGallery" class="portfolio-lightbox" title="@portfolio.Discription"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                <a asp-action="portfolioDetail" asp-route-id="@portfolio.Id"  data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     </div>

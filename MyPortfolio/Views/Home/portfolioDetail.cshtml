@@ -1,0 +1,62 @@
+﻿@model Portfolio
+@{
+    ViewData["Title"] = "portfolioDetail";
+}
+
+<main id="main" dir="rtl">
+
+    <!-- ======= Portfolio Details ======= -->
+  
+       <div id="portfolio-details" class="portfolio-details">
+           <div class="container">
+
+               <div class="row">
+
+                   <div class="col-lg-8">
+                       <h2 class="portfolio-title">پروژه = @Model.Name </h2>
+
+                       <div class="portfolio-details-slider swiper-container">
+                           <div class="swiper-wrapper align-items-center">
+
+                               <div class="swiper-slide">
+                                   <img src="~/img/portfolio/@Model.Image" alt="@Model.Name">
+                               </div>
+
+                               <div class="swiper-slide">
+                                   <img src="~/img/portfolio/@Model.Image" alt="@Model.Name">
+                               </div>
+
+                               <div class="swiper-slide">
+                                   <img src="~/img/portfolio/@Model.Image" alt="@Model.Name">
+                               </div>
+
+                           </div>
+                           <div class="swiper-pagination"></div>
+                       </div>
+
+                   </div>
+
+                   <div class="col-lg-4 portfolio-info">
+                       <h3>@Model.Name</h3>
+                       <ul>
+                           <li><strong>دسته بندی</strong>: @Model.Type</li>
+                           <li><strong>مشتری</strong>: @Model.Client</li>
+                           <li><strong> تاریخ پروژه</strong>: @Model.Date</li>
+                           <li><strong> آدرس پروژه</strong>: <a href="@Model.Url">@Model.Url</a></li>
+                       </ul>
+
+                       <p>
+                           @Model.Discription
+                       </p>
+                   </div>
+
+               </div>
+
+           </div>
+       </div>
+   
+    <!-- End Portfolio Details -->
+
+</main><!-- End #main -->
+
+
